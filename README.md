@@ -1,0 +1,3 @@
+-slowdown -> 25 to 23,976
+-speedup-> 23.976 to 25
+-100mb -> Cut at 100mb
