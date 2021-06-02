@@ -4,8 +4,11 @@
 
 -100mb -> Cut at 100mb
 
-eac3to input output -24.000 -changeTo23.976
+wine /app/eac3to/eac3to.exe input output -24.000 -changeTo23.976
 
-eac3to input.dts output.wavs
+wine /app/eac3to/eac3to.exe input.dts output.wavs
+
+wine /app/eac3to/eac3to.exe z:/raws "1)" -demux -progressnumbers
 
 ffmpeg -c:a libdcadec -i input.dts output.wav
+
