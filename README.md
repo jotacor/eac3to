@@ -6,4 +6,6 @@
 
 eac3to input output -24.000 -changeTo23.976
 
+eac3to input.dts output.wavs
+
 ffmpeg -c:a libdcadec -i input.dts output.wav
